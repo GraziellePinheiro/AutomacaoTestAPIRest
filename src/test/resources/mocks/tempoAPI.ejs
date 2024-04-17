@@ -1,0 +1,118 @@
+{
+	"port": 4545,
+	"protocol": "http",
+	"stubs": [
+		{
+			"predicates": [
+				{
+					"equals": {
+						"method": "GET",
+						"path": "/tempo-api/temperatura",
+						"query": {
+							"regiao": "Sudoeste"
+						}	
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+							"data": {
+								"temperatura": 35.50
+							}
+						}
+					}
+				}
+			]
+		},
+        {
+			"predicates": [
+				{
+					"equals": {
+						"method": "GET",
+						"path": "/tempo-api/temperatura",
+						"query": {
+							"regiao": "Sul"
+						}	
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+							"data": {
+								"temperatura": 38.00
+							}
+						}
+					}
+				}
+			]
+		},
+        {
+			"predicates": [
+				{
+					"equals": {
+						"method": "GET",
+						"path": "/tempo-api/temperatura",
+						"query": {
+							"regiao": "Norte"
+						}	
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+							"data": {
+								"temperatura": 34.00
+							}
+						}
+					}
+				}
+			]
+		},
+        {
+			"predicates": [
+				{
+					"equals": {
+						"method": "GET",
+						"path": "/tempo-api/temperatura",
+						"query": {
+							"regiao": "Leste"
+						}	
+					}
+				}
+			],
+			"responses": [
+				{
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+							"data": {
+								"temperatura": 30.00
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}
